@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     },
   ],
 
-  alias: {
-    '@base': resolve('./'),
-  },
+  // alias: {
+  //   '@base': resolve('./'),
+  // },
 })
