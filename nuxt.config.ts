@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   // Commenting this out and changing the import inside the Button component to
   // use a relative path over using the alias will make the error go away.
   // So it seems using an alias is causing the issue.
-  alias: {
-    '@base': resolve('./'),
-  },
+  // alias: {
+  //   '@base': resolve('./'),
+  // },
 })
