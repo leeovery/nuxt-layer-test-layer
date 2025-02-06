@@ -1,15 +1,6 @@
 <script lang="ts">
   import type { ButtonHTMLAttributes } from 'vue';
-
-  export type ThemeSlotKeys<T> = T extends { slots: infer S }
-                                 ? { [K in keyof S]: string | undefined }
-                                 : never;
-
-  export interface ThemeProps<T> {
-    theme?: string;
-    themeClasses?: ThemeSlotKeys<T>;
-    themeOverride?: T;
-  }
+  import type { ThemeProps } from '../ui/createTheme';
 
   export interface ButtonProps extends ThemeProps<{ variants: string }> {
     type?: ButtonHTMLAttributes['type'];
