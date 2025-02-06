@@ -8,6 +8,6 @@
 //   themeOverride?: T;
 // }
 
-export interface ThemePropsEmpty {
+export interface Theme {
   theme?: string;
 }
