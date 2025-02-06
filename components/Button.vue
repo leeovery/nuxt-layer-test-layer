@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { ButtonHTMLAttributes } from 'vue';
   // relative import works
-  import type { ThemeProps } from '../ui/createTheme';
+  // import type { ThemeProps } from '../ui/createTheme';
   // using alias causes issues with the type inference somehow.
-  // import type { ThemeProps } from '@base/ui/createTheme';
+  import type { ThemeProps } from '@base/ui/createTheme';
 
   export interface ButtonProps extends ThemeProps<{ variants: string }> {
     type?: ButtonHTMLAttributes['type'];
